@@ -1,8 +1,5 @@
 """
-Contextual Batting Intelligence (CBI) Engine v2.2
-Author: Muhammad Sohaib Iqbal
-Description: Production-ready decision-theoretic evaluation engine for cricket analytics.
-             Fixes sorting KeyError: 'ball' by utilizing natural index arrays.
+Contextual Batting Intelligence (CBI) Engine 
 """
 
 import os
@@ -18,9 +15,9 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout)]
 )
 
-# ==============================================================================
+# 
 # MODULE 1: GLOBAL CONFIGURATIONS & HISTORICAL SEEDING
-# ==============================================================================
+# 
 CONFIG = {
     'alpha': 0.65,
     'theta1': 2.6,
@@ -68,9 +65,9 @@ OPPOSITION_TEAM_RANKINGS = {
     'OMA': 148, 'PNG': 136, 'UGA': 135
 }
 
-# ==============================================================================
+# 
 # MODULE 2: DATA PROCESSING & FEATURE ENGINEERING PIPELINE
-# ==============================================================================
+# 
 class CricketDataPipeline:
     def __init__(self, file_path: str):
         self.file_path = file_path
@@ -161,9 +158,9 @@ class CricketDataPipeline:
         return final_df
 
 
-# ==============================================================================
+# 
 # MODULE 3: MAXIMUM ENTROPY INVERSE REINFORCEMENT LEARNING ENGINE
-# ==============================================================================
+# 
 class CBIEngine:
     def __init__(self):
         self.alpha = CONFIG['alpha']
@@ -214,9 +211,9 @@ class CBIEngine:
         return df
 
 
-# ==============================================================================
+# 
 # MODULE 4: RANKING COMPARISON & REPORT GENERATOR
-# ==============================================================================
+# 
 class ExcelReportGenerator:
     @staticmethod
     def construct_workbook(df: pd.DataFrame, output_path: str):
@@ -274,9 +271,9 @@ class ExcelReportGenerator:
             logging.error("Missing file writer engine. Execute command in console: 'pip install openpyxl'")
 
 
-# ==============================================================================
+# 
 # MODULE 5: RUNTIME INITIALIZATION ENGINE
-# ==============================================================================
+# 
 if __name__ == "__main__":
     DATA_PATH = "t20_json_data/mens_t20_world_cup_ball_by_ball.csv"
     OUTPUT_PATH = "T20_WC_CBI_vs_Traditional_Rankings.xlsx"
