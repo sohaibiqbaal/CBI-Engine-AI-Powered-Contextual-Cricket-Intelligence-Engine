@@ -57,6 +57,8 @@ BOWLER_ICC_RANKINGS = {
     'Abinash Bohara': 485, 'Bilal Khan': 480, 'Aqib Ilyas': 475
 }
 
+# Both Bowler and Team Rankings From June 2024
+
 OPPOSITION_TEAM_RANKINGS = {
     'IND': 265, 'AUS': 258, 'ENG': 254, 'WI': 253,
     'NZ': 248, 'RSA': 247, 'PAK': 241, 'SL': 230,
