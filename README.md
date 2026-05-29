@@ -12,8 +12,8 @@ The **Contextual Batting Intelligence (CBI) framework** reconceptualises batting
 ## Mathematical Foundation
 
 ### 1. State-Dependent Risk Weight
-[cite_start]The cost of losing a wicket scales with resource scarcity[cite: 74].
-* [cite_start]**Innings 1:** `λ(s) = θ1 × (W_t + 1) / (B_t + 1)` [cite: 77]
+[cite_start]The cost of losing a wicket scales with resource scarcity
+* [cite_start]**Innings 1:** `λ(s) = θ1 × (W_t + 1) / (B_t + 1)`
 * [cite_start]**Innings 2:** `λ(s) = θ2 × (W_t + 1) / (B_t + 1) × exp(clip[(RRR_t - CRR_t)/(CRR_t + 1), -2, 2])`
 
 ### 2. Contextual Utility
@@ -29,14 +29,13 @@ A player's CBI Index is the arithmetic mean of per-delivery CBI probabilities ac
 
 ## Repository Architecture
 
-**`cbi_advanced_suite.py`**: Multi-tournament pipeline, CBIEngine, and ExcelReportGenerator[cite: 245].
-**`cbi_ranker.py`**: Single-tournament CBI pipeline[cite: 245].
-* **`cbi_bootstrap_ci_module.py`**: Stratified BCa bootstrap validator[cite: 245].
-* **`cbi_vs_icc_comparator.py`**: ICC rating simulation and paradigm comparison[cite: 245].
-* **`cbi_validation_extensions.py`**: Revised validation tests (post-hoc)[cite: 245].
-* **`cbi_validation.py`**: Four pre-registered statistical tests[cite: 245].
-* **`cbi_benchmark.py`**: Compare CBI to SR, Runs, Avg, WCI, and ICC ratings[cite: 245].
-
+**`cbi_advanced_suite.py`**: Multi-tournament pipeline, CBIEngine, and ExcelReportGenerator
+**`cbi_ranker.py`**: Single-tournament CBI pipeline
+* **`cbi_bootstrap_ci_module.py`**: Stratified BCa bootstrap validator.
+* **`cbi_vs_icc_comparator.py`**: ICC rating simulation and paradigm comparison.
+* **`cbi_validation_extensions.py`**: Revised validation tests (post-hoc)
+* **`cbi_validation.py`**: Four pre-registered statistical tests
+* **`cbi_benchmark.py`**: Compare CBI to SR, Runs, Avg, WCI, and ICC ratings
 ## Validation & Empirical Findings
 
 * **Robustness (Sensitivity Analysis):** The aggregate mean rank standard deviation across 282 qualified players is 1.80 positions, showing strong stabilit
