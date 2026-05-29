@@ -20,9 +20,9 @@ except ImportError:
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 
-# ==============================================================================
+# 
 # ENGINE: EMULATING THE OFFICIAL ICC MEN'S T20 BATTING RATING ALGORITHM
-# ==============================================================================
+# 
 class ICCT20RatingEngine:
     @staticmethod
     def compute_match_ratings(raw_df: pd.DataFrame) -> pd.DataFrame:
@@ -119,9 +119,9 @@ class ICCT20RatingEngine:
         agg_df['ICC_Rank'] = agg_df['ICC_Rating'].rank(ascending=False, method='min').astype(int)
         return agg_df.sort_values(by='ICC_Rank').reset_index(drop=True)
 
-# ==============================================================================
+# 
 # COMPARATIVE VALIDATION EXECUTION ENGINE
-# ==============================================================================
+# 
 def execute_paradigm_comparison():
     DATA_DIR = "t20_json_data"
     OUTPUT_FILE = "CBI_vs_ICC_Comparison_Report.xlsx"
