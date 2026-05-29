@@ -558,5 +558,5 @@ def run_all_validations(data_dir="t20_json_data",
 if __name__ == "__main__":
     run_all_validations(
         data_dir="t20_json_data",
-        output_file="CBI_Validation_Suite.xlsx"
+        output_file="CBI_Validation_Extensions_Suite.xlsx"
     )
