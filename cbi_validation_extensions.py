@@ -1,7 +1,5 @@
 """
-CBI Validation Extensions v1.0 — Bootstrap CI Fixed
-Author: Muhammad Sohaib Iqbal
-Changes from v1.0:
+Changes from First Test
   - Test 2 (Bootstrap Confidence Intervals) replaced with CBIBootstrapValidator
     from cbi_bootstrap_ci_module.py. Fixes the 4.1.2 FAIL via:
       (1) Population percentile rescaling to [0,100] — eliminates softmax compression
