@@ -1,7 +1,4 @@
 """
-Contextual Batting Intelligence (CBI) Engine — Module 6: Bootstrap CI Validator
-Author: Muhammad Sohaib Iqbal
-
 What this module does:
     Computes 95% bootstrap confidence intervals on each qualified player's mean
     CBI Index (raw cbi_probability scale, same as the pre-registered test) using
