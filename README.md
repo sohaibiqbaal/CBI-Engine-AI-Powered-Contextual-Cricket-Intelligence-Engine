@@ -12,9 +12,9 @@ The **Contextual Batting Intelligence (CBI) framework** reconceptualises batting
 ## Mathematical Foundation
 
 ### 1. State-Dependent Risk Weight
-[cite_start]The cost of losing a wicket scales with resource scarcity
-* [cite_start]**Innings 1:** `λ(s) = θ1 × (W_t + 1) / (B_t + 1)`
-* [cite_start]**Innings 2:** `λ(s) = θ2 × (W_t + 1) / (B_t + 1) × exp(clip[(RRR_t - CRR_t)/(CRR_t + 1), -2, 2])`
+The cost of losing a wicket scales with resource scarcity
+**Innings 1:** `λ(s) = θ1 × (W_t + 1) / (B_t + 1)`
+* **Innings 2:** `λ(s) = θ2 × (W_t + 1) / (B_t + 1) × exp(clip[(RRR_t - CRR_t)/(CRR_t + 1), -2, 2])`
 
 ### 2. Contextual Utility
 Opponent quality is treated as an exogenous contextual modifier
