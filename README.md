@@ -36,11 +36,6 @@ A player's CBI Index is the arithmetic mean of per-delivery CBI probabilities ac
 * **`cbi_validation_extensions.py`**: Revised validation tests (post-hoc)
 * **`cbi_validation.py`**: Four pre-registered statistical tests
 * **`cbi_benchmark.py`**: Compare CBI to SR, Runs, Avg, WCI, and ICC ratings
-## Validation & Empirical Findings
-
-* **Robustness (Sensitivity Analysis):** The aggregate mean rank standard deviation across 282 qualified players is 1.80 positions, showing strong stabilit
-**Null Hypothesis Inversion:** Shuffled data produced higher scores (Z = -69.65), establishing that CBI currently measures proximity to the dataset's empirical average policy rather than independent optimal decisions
-* **Predictive Validity:** Using a cumulative training design (2016+2021+2022) to predict 2024, the framework achieves a Spearman correlation of ρ = 0.421, exceeding the predefined threshold
 ## License & Data
 Ball-by-ball delivery data were sourced from Cricsheet.org under a Creative Commons licence
 This study uses exclusively publicly available sports performance data
